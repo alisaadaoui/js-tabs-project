@@ -4,39 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Simple Tabs Project</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="tabs">
-    <div class="tab-buttons">
-      <button class="tab-btn active" data-tab="tab1">Tab 1</button>
-      <button class="tab-btn" data-tab="tab2">Tab 2</button>
-      <button class="tab-btn" data-tab="tab3">Tab 3</button>
-      <button class="tab-btn" data-tab="tab4">Tab 4</button>
+  <div class="tabs-container">
+    <div class="tab-header">
+      <button class="tab-btn active" data-tab="tab1">First Tab</button>
+      <button class="tab-btn" data-tab="tab2">Second Tab</button>
+      <button class="tab-btn" data-tab="tab3">Third Tab</button>
+      <button class="tab-btn" data-tab="tab4">Fourth Tab</button>
     </div>
-
+    <div class="tab-desc">
+      Clicking each tab should hide the content of the other tab and show the content of clicked tab. By default, enable the first tab.
+    </div>
     <div class="tab-content">
       <div id="tab1" class="tab-panel active">
-        <h2>Content for Tab 1</h2>
-        <p>This is the content shown for the first tab by default.</p>
+        <div class="tab-box">First Tab content to be displayed here.</div>
       </div>
       <div id="tab2" class="tab-panel">
-        <h2>Content for Tab 2</h2>
-        <p>This is the content for the second tab.</p>
+        <div class="tab-box">Second Tab content to be displayed here.</div>
       </div>
       <div id="tab3" class="tab-panel">
-        <h2>Content for Tab 3</h2>
-        <p>This is the content for the third tab.</p>
+        <div class="tab-box">Third Tab content to be displayed here.</div>
       </div>
       <div id="tab4" class="tab-panel">
-        <h2>Content for Tab 4</h2>
-        <p>This is the content for the fourth tab.</p>
+        <div class="tab-box">Fourth Tab content to be displayed here.</div>
       </div>
+    </div>
+    <div class="tab-footer">
+      Add some dummy content or just add a simple text showing the tab
     </div>
   </div>
 
-  <!-- Your JS file link (to be created by you) -->
+
   <script src="script.js"></script>
 
 </body>
